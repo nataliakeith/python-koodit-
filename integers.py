@@ -1,10 +1,13 @@
-a =int(input("enter the firts integer: "))
-b =int(input("enter the second integer: "))
-c =int(input("enter the third integer: "))
+from math import prod
 
-total = a + b + c
+a =int(input("first integers: "))
+b =int(input("second integers: "))
+c =int(input("third integers: "))
+
+sum = a + b + c
 prod = a * b * c
-average = total / 3
-print(f"Sum: {total}")
-print(f"Product: {prod}")
-print(f"Average: {average}")
+average = sum / 3
+
+print("sum is " + str(sum))
+print("product is " + str(prod))
+print("average is " + str(average))
