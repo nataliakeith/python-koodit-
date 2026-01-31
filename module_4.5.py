@@ -11,7 +11,7 @@ while attempts < 5:
     print("Wrong username or password.")
     attempts += 1
     if attempts == 5:
-        print("acess denied")
+        print("access denied")
 
 
 
