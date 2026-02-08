@@ -1,9 +1,9 @@
-def gallons_to_liters(gallons):
-    return gallons * 3.785
+def gallons(number):
+    return number * 3.78541
 
-while True:
-    gallons = float(input("enter gallons or type negative number to stop: "))
-    if gallons < 0:
-        break
-    liters = gallons_to_liters(gallons)
-    print(liters)
+volume = float(input("enter a volume in gallon: "))
+conversion = 0
+while volume >= 0:
+    conversion = gallons(volume)
+    print(conversion)
+    volume = float(input("enter a volume in gallon: "))

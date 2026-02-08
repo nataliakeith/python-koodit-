@@ -1,10 +1,10 @@
 import random
-sides = int(input("how many sides dice has: "))
 
 def dice(sides):
-    return random.randint(1, sides)
-roll = 0
-while roll!= sides:
-    roll = dice(sides)
-    print(roll)
+    return random.randint(1,sides)
 
+max_sides = int(input("enter number of sides of the dice: "))
+rolls = 0
+while rolls != max_sides:
+    rolls = dice(max_sides)
+    print(rolls)

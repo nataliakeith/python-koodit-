@@ -1,18 +1,16 @@
-def pizza(diameter, price):
-    return price/(3.14 * (diameter/ 200)**2)
+def pizza(diameter,price):
+    area = 3.14 * (diameter/200) ** 2
+    return price / area
 
-diameter = float(input("enter diameter of first pizza: "))
-price = float(input("enter price of first pizza: "))
-unit1 = pizza(diameter, price)
+diameter1 = float(input("enter diameter of the first pizza: "))
+price1 = float(input("Enter price of the first pizza: "))
 
-diameter = float(input("enter diameter of second pizza: "))
-price = float(input("enter price of second pizza: "))
-unit2 = pizza(diameter, price)
+diameter2 = float(input("enter diameter of the second pizza: "))
+price2 = float(input("Enter price of the second pizza: "))
 
-if unit1 < unit2:
-    print("Pizza 1 has better price.")
-elif unit2 < unit1:
-    print("Pizza 2 has better price.")
-else:
-    print("Same value.")
-
+pizza1 = pizza(diameter1, price1)
+pizza2 = pizza(diameter2,price2)
+if pizza1 < pizza2:
+    print("First pizza unit price is lower", pizza1)
+elif pizza2 > pizza1:
+    print("Second pizza unit price is lower: ", pizza2)

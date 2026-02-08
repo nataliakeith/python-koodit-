@@ -1,11 +1,11 @@
-def remove_odd(numbers):
-    even_numbers = []
-    for n in numbers:
-            if n % 2 == 0:
-                even_numbers.append(n)
-    return even_numbers
-normal_list= [1,2,3,4]
-filtered = remove_odd(normal_list)
+uneven = []
+divisor = 2
+def list_of_integers(numbers):
+    for number in numbers:
+        if number % divisor != 0:
+            uneven.append(number)
+    return numbers
 
-print("Normal list: ", normal_list)
-print("filtered list:", filtered)
+numbers_list = [1, 2, 3, 4]
+total = list_of_integers(numbers_list)
+print(total, uneven)

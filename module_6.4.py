@@ -1,9 +1,6 @@
 def list_of_integers(numbers):
-    total = 0
-    for n in numbers:
-        total = total + n
-    return total
-numbers = [1, 2, 3]
-result = list_of_integers(numbers)
-print(result)
+    return sum(numbers)
 
+numbers_list = [1, 2, 3, 4]
+sum_of_integers = list_of_integers(numbers_list)
+print("Sum:",sum_of_integers)

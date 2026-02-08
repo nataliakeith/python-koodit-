@@ -1,10 +1,19 @@
-names = []
+cities = []
 
-for n in range(1,6):
-    name = input("enter city:")
-    names.append(name)
-for name in names:
-    print(name)
+for i in range(5):
+    city = input("Enter the name of a city: ")
+    cities.append(city)
+
+for city in cities:
+    print(city)
+
+
+
+
+
+
+
+
 
 
 
